@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const database = require('../database');
 
 const updateAlbum = (req, res) => {
