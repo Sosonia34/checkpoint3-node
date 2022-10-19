@@ -7,7 +7,7 @@ const database = require('../../database');
 const getOne = (req, res) => {
   const { id } = req.params;
   database
-    .query('SELECT * FROM track WHERE id = $1', [id])
+    .query('SELECT * FROM track WHERE id = 1', [id])
     .then(([track]) => {
       res.status(200).json(track);
     })
