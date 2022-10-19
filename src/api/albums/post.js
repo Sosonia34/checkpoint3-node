@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 /* eslint-disable prettier/prettier */
 /* eslint no-console: "error" */
-const database = require('../database');
+const database = require('../../database');
 
 const postAlbum = (req, res) => {
   const { title, artist_id } = req.body;

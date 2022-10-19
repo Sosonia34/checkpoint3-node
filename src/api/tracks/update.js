@@ -3,7 +3,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint no-console: "error" */
 / eslint-disable no-console */
-const database = require('../database');
+const database = require('../../database');
 
 const updateTrack = (req, res) => {
   const { id } = req.params;

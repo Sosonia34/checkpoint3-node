@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 /* eslint-disable prettier/prettier */
 /* eslint no-console: "error" */
-const database = require('../database');
+const database = require('../../database');
 
 const postTrack = (req, res) => {
   const { title, album_id, duration, artist_id } = req.body;
