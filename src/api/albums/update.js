@@ -1,4 +1,7 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
+/* eslint-disable prettier/prettier */
+/* eslint no-console: "error" */
 const database = require('../database');
 
 const updateAlbum = (req, res) => {

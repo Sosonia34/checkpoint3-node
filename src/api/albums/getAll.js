@@ -1,7 +1,10 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
+/* eslint-disable prettier/prettier */
+/* eslint no-console: "error" */
 const database = require('../database');
 
-module.exports = (req, res) => {
+module.exports = (req, res) => { 
   database
     .query('select * from album')
     .then(([albums]) => {

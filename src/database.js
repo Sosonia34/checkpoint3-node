@@ -1,3 +1,7 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
+/* eslint-disable prettier/prettier */
+/* eslint no-console: "error" */
 require('dotenv').config();
 const mysql = require('mysql2/promise');
 
