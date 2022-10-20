@@ -4,14 +4,16 @@
 /* eslint no-console: "error" */
 const database = require('../../database');
 
-module.exports = (req, res) => { 
+const getOne = (req, res) => {
+  const { id } = req.params;
   database
-    .query('select * from album')
-    .then(([albums]) => {
-      res.send(albums);
+    .query('SELECT * FROM album WHERE id = $1', [id])
+    .then(([album]) => {
+      res.status(200).json(album);
     })
     .catch((err) => {
       console.error(err);
       res.status(500).send('Error retrieving data from database');
     });
 };
+module.exports = getOne;
